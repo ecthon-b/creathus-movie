@@ -3,6 +3,8 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 :root {
     --background: #f0f2f5;
+    --blue: #263470;
+    --orange: #F3722D;
 }
 
 * {
@@ -33,7 +35,8 @@ body, input, textarea, button {
 }
 
 h1, h2, h3, h4, h5, h6, strong {
-    font-weight: 600;
+    font-family: 'Rajdhani';
+    font-weight: 700;
 }
 
 button {
