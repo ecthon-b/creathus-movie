@@ -5,6 +5,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
+    justify-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
     gap: 40px 32px;

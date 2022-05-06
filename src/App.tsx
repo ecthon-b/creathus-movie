@@ -1,13 +1,15 @@
-import { Header } from "./components/Header";
-import { ShowMovie } from "./components/ShowMovies";
+import { BrowserRouter } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { MainRoute } from "./routes";
 import { GlobalStyle } from "./styles/global";
 
 export function App() {
   return (
     <>
-      <Header />
-      <ShowMovie />
-      <GlobalStyle />
+      <BrowserRouter>
+        <MainRoute />
+        <GlobalStyle />
+      </BrowserRouter>
     </>
   );
 }

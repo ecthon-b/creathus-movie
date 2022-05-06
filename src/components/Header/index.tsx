@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logoImg from '../../assets/logo.svg';
 
 import { Container, Content } from './styles';
@@ -17,7 +18,11 @@ export function Header() {
                         </div>
                     </div>
                     
-                    <button>NOVO FILME</button>
+                    <button>
+                        <Link to="movie">
+                            NOVO FILME
+                        </Link>
+                    </button>
                 </div>
             </Content>
         </Container>

@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     --orange: #F3722D;
 
     --title: #27272A;
+    --text: #71717A;
 }
 
 * {
