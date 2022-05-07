@@ -2,12 +2,18 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 :root {
-    --background: #f0f2f5;
+    --background: #F0F0F7;
     --blue: #263470;
     --orange: #F3722D;
+    --green: #04D361;
 
     --title: #27272A;
     --text: #71717A;
+    --text-label: #9C98A6;
+    
+    --shape: #FAFAFC;
+    --border: #E6E6F0;
+    --border-hover: #EBEBF5;
 }
 
 * {
@@ -38,7 +44,7 @@ body, input, textarea, button {
 }
 
 h1, h2, h3, h4, h5, h6, strong {
-    font-family: 'Rajdhani';
+    font-family: 'Archivo', sans-serif;
     font-weight: 700;
 }
 
