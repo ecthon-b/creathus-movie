@@ -19,7 +19,7 @@ export function Header() {
                     </div>
                     
                     <button>
-                        <Link to="movie">
+                        <Link className='mylink' to="movie">
                             NOVO FILME
                         </Link>
                     </button>

@@ -57,5 +57,16 @@ export const Content = styled.div`
         border-radius: 0.25rem;
         height: 3rem;
         font-weight: 400;
+        transition: 0.2s;
+
+        &:hover {
+            background: var(--orange-hover);
+        }
+
+        .mylink {
+            text-decoration: none;
+            font-weight: 500;
+            color: #fff;
+        }
     }
 `;

@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     --background: #F0F0F7;
     --blue: #263470;
     --orange: #F3722D;
+    --orange-hover: #F0671D;
     --green: #04D361;
 
     --title: #27272A;
