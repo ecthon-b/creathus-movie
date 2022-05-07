@@ -2,6 +2,15 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     padding: 2rem;
+
+    .title_container {
+        width: 1120px;
+        margin: 32px auto;
+        
+        h1 {
+            color: var(--text);
+        }
+    }
 `;
 
 export const Content = styled.div`
@@ -11,7 +20,6 @@ export const Content = styled.div`
     gap: 40px 32px;
     flex-wrap: wrap;
     max-width: 1120px;
-    /* background: red; */
     margin: 2rem auto;
 
     .bannerContainer {
@@ -20,6 +28,15 @@ export const Content = styled.div`
         background: #fff;
         border-radius: 0.25rem;
         padding: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.41);
+            -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.41);
+            -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.41);
+            margin-top: -2px;
+        }
 
         .banner {
             width: 236px;
