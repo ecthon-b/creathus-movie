@@ -146,6 +146,11 @@ export const Content = styled.div`
                 color: #fff;
                 border-radius: 0.5rem;
                 border: 0;
+                transition: 0.2s;
+
+                &:hover {
+                    background: var(--green-hover);
+                }
             }
 
         }

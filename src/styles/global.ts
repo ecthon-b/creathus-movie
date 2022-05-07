@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     --orange: #F3722D;
     --orange-hover: #F0671D;
     --green: #04D361;
+    --green-hover: #03C564;
 
     --title: #27272A;
     --text: #71717A;
