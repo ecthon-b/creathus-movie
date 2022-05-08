@@ -54,7 +54,7 @@ export const Content = styled.div`
         height: 1px;
         background: var(--border);
         margin-bottom: 1.5rem;
-    } 
+    }
 
     .formItem {
         width: 608px;
@@ -62,7 +62,6 @@ export const Content = styled.div`
         border-radius: 0.5rem;
         flex-direction: column;
         margin-bottom: 20px;
-        
         
         label {
             color: var(--text-label);

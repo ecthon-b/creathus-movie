@@ -31,6 +31,10 @@ export function RegisterNewMovie() {
                         <input type="text" id="title" name="title"/>
                     </form>
                     <form className="formItem">
+                        <label htmlFor="banner">URL da Imagem (https://)</label>
+                        <input type="text" id="banner" name="banner"/>
+                    </form>
+                    <form className="formItem">
                         <label htmlFor="description">Descrição</label>
                         <textarea id="description" name="description"/>
                     </form>

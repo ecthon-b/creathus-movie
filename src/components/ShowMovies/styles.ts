@@ -22,6 +22,10 @@ export const Content = styled.div`
     max-width: 1120px;
     margin: 2rem auto;
 
+    .mylink {
+        text-decoration: none;
+    }
+
     .bannerContainer {
         width: 256px;
         height: 350px;
