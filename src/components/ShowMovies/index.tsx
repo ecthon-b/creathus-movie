@@ -4,19 +4,23 @@ import { Link } from 'react-router-dom';
 import { api } from '../../services/api';
 import { Container, Content } from './styles';
 
-interface IMovies {
+export interface IMovies {
+    id?: number;
+    ator: string;
     banner: string;
     title: string;
-    classificacao: string;
+    classificacao?: string;
+    description: string;
 }
 
 export function ShowMovie() {
-    const [ allmovies, setMovies ] = useState<IMovies[]>([]);
+    const [movies, setMovies] = useState<IMovies[]>([]);
 
     useEffect(() => {
         api.get('movies')
-        .then(response => setMovies(response.data));
-        
+            .then(response => setMovies(response.data.movies));
+
+
     }, [])
 
     return (
@@ -25,17 +29,17 @@ export function ShowMovie() {
                 <h1>Últimos filmes adicionados</h1>
             </div>
             <Content>
-                {allmovies.map(movie => (
-                    <Link key={movie.title} className='mylink' to="sinopse">
+                {movies?.map(movie => (
+                    <Link key={movie.id} className='mylink' to={`sinopse/${movie.id}`}>
                         <div className='bannerContainer'>
                             <img className='banner' src={movie.banner} alt="" />
                             <h3>{movie.title}</h3>
-                            <p>Classifição por estrelas {movie.classificacao}</p>
+                            <p>Classifição por estrelas {movie?.classificacao}</p>
                         </div>
                     </Link>
                 ))}
-                
-            </Content> 
+
+            </Content>
         </Container>
     )
 }

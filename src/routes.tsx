@@ -4,11 +4,11 @@ import { RegisterNewMovie } from "./pages/RegisterNewMovie";
 import { Synopsis } from "./pages/Synopsis";
 
 export function MainRoute() {
-    return(
+    return (
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/movie" element={<RegisterNewMovie />} />
-            <Route path="/sinopse" element={<Synopsis />} />
+            <Route path="/sinopse/:id" element={<Synopsis />} />
         </Routes>
     )
 }
