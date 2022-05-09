@@ -26,7 +26,7 @@ header {
         }
     }
 `;
-    
+
 export const Content = styled.div`
     display: flex;
     align-items: center;
@@ -136,23 +136,26 @@ export const Content = styled.div`
                 }
             }
 
-            button {
-                width: 197px;
-                height: 56px;
-                background: var(--green);
-                font-family: 'Archivo', sans-serif;
-                font-weight: 600;
-                color: #fff;
-                border-radius: 0.5rem;
-                border: 0;
-                transition: 0.2s;
-
-                &:hover {
-                    background: var(--green-hover);
-                }
-            }
+            
 
         }
     }
 
+    
+`;
+
+export const ButtonCTA = styled.button`
+    width: 197px;
+    height: 56px;
+    background: ${props => props.disabled ? "#c3c3c3" : "#04D361"};
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    color: #FFF;
+    border-radius: 0.5rem;
+    border: 0;
+    transition: 0.2s;
+
+    &:hover {
+        background: ${props => props.disabled ? "#c3c3c3" : "#03C564"};
+    }
 `;

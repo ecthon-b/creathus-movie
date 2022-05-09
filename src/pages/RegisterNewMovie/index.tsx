@@ -1,4 +1,4 @@
-import { Container, Content } from './styles';
+import { Container, Content, ButtonCTA } from './styles';
 
 import alertImg from '../../assets/atencao.svg';
 import logoImg from '../../assets/logo.svg';
@@ -41,7 +41,7 @@ export function RegisterNewMovie() {
         const data = await api.post('movies', body)
 
         if (data.status == 400) {
-            return alert("Esse filme já existe")
+            return alert("Esse filme já existe!");
         }
         navigate("/")
     }
@@ -86,7 +86,7 @@ export function RegisterNewMovie() {
                                     Preencha todos os dados
                                 </span>
                             </div>
-                            <button onClick={submitForm} disabled={!validSubmit}>Salvar cadastro</button>
+                            <ButtonCTA onClick={submitForm} disabled={!validSubmit}>Salvar cadastro</ButtonCTA>
                         </div>
                     </div>
                 </Content>
