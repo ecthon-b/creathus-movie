@@ -1,6 +1,12 @@
 <div align="center">
     <img src="src/assets/home.png" alt="Imagem Home Creathus Movies"/>
 </div>
+<div align="center">
+    <img src="src/assets/register.png" alt="Imagem da página Register"/>
+</div>
+<div align="center">
+    <img src="src/assets/sinopse.png" alt="Imagem da página de sinopse"/>
+</div>
 
 <br>
 
@@ -33,8 +39,10 @@ upload de imagem.
 
 ## Rodando projeto em sua máquina
 
+- Front-End
+
 - 1. Faça o clone do projeto em: `git clone https://github.com/ecthon/creathus-movie.git`
-- 2. Instale as depedencias do projeto com o comando: `yarn`
+- 2. Instale as depedências do projeto com o comando: `yarn`
 - 3. Execute o projeto: `yarn start`
 - 4. Acessando projeto em: `http://localhost:3000`
 
@@ -43,7 +51,14 @@ upload de imagem.
 - Sinopse: `http://localhost:3000/sinopse`
 - Register: `http://localhost:3000/movie`
 
+ - Back-End
 
+ - 1. Você precisará ter o Postgres instalado em sua máquina;
+ - 2. Crie um banco como o nome: `movies_db`
+ - 3. Faça o clone do projeto em: `git clone https://github.com/ecthon/backend-creathusmovies.git`
+ - 4. Instale as depedências do projeto com o comando: `yarn`
+ - 5. Execute o comando `yarn prisma migrate dev` para gerar a tabela do banco
+ - 6. Execute o comando `yarn start` para rodar a aplicação 
 ## Links
 
 - [Página publicada](https://creathus-movie-d2ww98mil-ecthon.vercel.app/)
