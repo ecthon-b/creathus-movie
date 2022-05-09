@@ -17,13 +17,19 @@ upload de imagem.
 
 ## Tecnologies
 
-- React.js
-- Typescript
-- Styled Components
-- Axios (Acessar rotas API)
-- Mirage.js (Criar fake API)
-- react-router-dom (criar rotas do front-end)
-- Vercel (Hospedagem)
+- Front-End
+-- React.js
+-- Typescript
+-- Styled Components
+-- Axios (Acessar rotas API)
+-- Mirage.js (Criar fake API)
+-- react-router-dom (criar rotas do front-end)
+-- Vercel (Hospedagem)
+
+- Back-End
+-- Prisma (ORM)
+-- Postgres
+-- Node.js
 
 ## Rodando projeto em sua máquina
 
